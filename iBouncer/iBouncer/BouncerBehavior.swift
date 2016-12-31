@@ -21,9 +21,9 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var blocker: UIDynamicItemBehavior = {
         let lazilyCreatedBlocker = UIDynamicItemBehavior()
         lazilyCreatedBlocker.allowsRotation = true
-        lazilyCreatedBlocker.elasticity = 1  //碰撞的弹性
-        lazilyCreatedBlocker.friction = 0    //摩擦
-        lazilyCreatedBlocker.resistance = 0  //线性阻力
+        lazilyCreatedBlocker.elasticity = 1  // 碰撞的弹性
+        lazilyCreatedBlocker.friction = 0    // 摩擦力
+        lazilyCreatedBlocker.resistance = 0  // 线性阻力
         return lazilyCreatedBlocker
     }()
  
