@@ -13,6 +13,7 @@
 		6D025EE51E175ADF000B4631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D025EE41E175ADF000B4631 /* Assets.xcassets */; };
 		6D025EE81E175ADF000B4631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D025EE61E175ADF000B4631 /* LaunchScreen.storyboard */; };
 		6D025EF01E175B90000B4631 /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D025EEF1E175B90000B4631 /* BouncerBehavior.swift */; };
+		6D14A60F1E1E9D0F0099F78C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D14A60E1E1E9D0F0099F78C /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6D025EE71E175ADF000B4631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D025EE91E175ADF000B4631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D025EEF1E175B90000B4631 /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = "<group>"; };
+		6D14A60E1E1E9D0F0099F78C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6D025EE41E175ADF000B4631 /* Assets.xcassets */,
 				6D025EE61E175ADF000B4631 /* LaunchScreen.storyboard */,
 				6D025EE91E175ADF000B4631 /* Info.plist */,
+				6D14A60E1E1E9D0F0099F78C /* Settings.bundle */,
 			);
 			path = iBouncer;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D14A60F1E1E9D0F0099F78C /* Settings.bundle in Resources */,
 				6D025EE81E175ADF000B4631 /* LaunchScreen.storyboard in Resources */,
 				6D025EE51E175ADF000B4631 /* Assets.xcassets in Resources */,
 				6D025EE31E175ADF000B4631 /* Main.storyboard in Resources */,
@@ -291,6 +295,7 @@
 				6D025EEE1E175ADF000B4631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

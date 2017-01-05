@@ -1,2 +1,4 @@
 # iBouncer
 Core Motion
+
+Settings

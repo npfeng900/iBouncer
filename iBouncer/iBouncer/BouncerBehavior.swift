@@ -9,6 +9,7 @@
 import UIKit
 
 class BouncerBehavior: UIDynamicBehavior {
+    
     /** UIGravityBehavior */
     let gravity = UIGravityBehavior()
     /** UICollisionBehavior */
@@ -21,9 +22,15 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var blocker: UIDynamicItemBehavior = {
         let lazilyCreatedBlocker = UIDynamicItemBehavior()
         lazilyCreatedBlocker.allowsRotation = true
-        lazilyCreatedBlocker.elasticity = 1  // 碰撞的弹性
+         // 碰撞的弹性
+        lazilyCreatedBlocker.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey("BouncerBehavior.Elasticity"))
         lazilyCreatedBlocker.friction = 0    // 摩擦力
         lazilyCreatedBlocker.resistance = 0  // 线性阻力
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(NSUserDefaultsDidChangeNotification, object: nil, queue: nil) { (notification) -> Void in
+            lazilyCreatedBlocker.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey("BouncerBehavior.Elasticity"))
+        }
+        
         return lazilyCreatedBlocker
     }()
  
