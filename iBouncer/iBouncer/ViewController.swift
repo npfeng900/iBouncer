@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         bouncer.gravity.gravityDirection = CGVector(dx: x, dy:y)
     }
     
-    /** Block */
+    /** Block **/
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
